@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="gokon" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,106 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Jf0-P4-uRK" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="aGc-jr-xBp"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Nca-5A-IBH">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="LCY-vD-viT">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mA2-z8-kaC">
+                                <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jf0-P4-uRK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0PD-l9-tyd"/>
+                            <constraint firstAttribute="trailing" secondItem="Jf0-P4-uRK" secondAttribute="trailing" id="6nh-hq-4N7"/>
+                            <constraint firstItem="mA2-z8-kaC" firstAttribute="top" secondItem="Jf0-P4-uRK" secondAttribute="bottom" id="ck1-ie-NTM"/>
+                            <constraint firstItem="mA2-z8-kaC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="n36-W2-yLW"/>
+                            <constraint firstAttribute="trailing" secondItem="mA2-z8-kaC" secondAttribute="trailing" id="oMv-ho-Ytf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mA2-z8-kaC" secondAttribute="bottom" id="qxq-qU-paP"/>
+                            <constraint firstItem="Jf0-P4-uRK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="w24-em-9Bp"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="containerView" destination="mA2-z8-kaC" id="7Dr-5y-dKb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1241" y="-202"/>
+        </scene>
+        <!--Ojisan View Controller-->
+        <scene sceneID="we1-HB-Y9x">
+            <objects>
+                <viewController storyboardIdentifier="Ojisan" id="zBX-3x-GLi" customClass="OjisanViewController" customModule="gokon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yen-Lh-y01"/>
+                        <viewControllerLayoutGuide type="bottom" id="T6u-Wq-IbU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="29u-AT-d4n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KAN-kQ-Wxi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1500" y="616"/>
+        </scene>
+        <!--Change Seats View Controller-->
+        <scene sceneID="dxN-I9-K7I">
+            <objects>
+                <viewController storyboardIdentifier="ChangeSeats" id="1mU-wO-8H4" customClass="ChangeSeatsViewController" customModule="gokon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xNa-x8-Vhk"/>
+                        <viewControllerLayoutGuide type="bottom" id="VT8-h1-t0N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eOL-mC-AjJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="juH-0g-uJ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-767" y="616"/>
+        </scene>
+        <!--Pairing View Controller-->
+        <scene sceneID="xvV-pM-lkd">
+            <objects>
+                <viewController storyboardIdentifier="Pairing" id="Keb-PR-feC" customClass="PairingViewController" customModule="gokon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gzT-RC-Smf"/>
+                        <viewControllerLayoutGuide type="bottom" id="jOc-mX-AEd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="10g-2f-SO4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ic-jq-bgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-44" y="616"/>
         </scene>
     </scenes>
 </document>

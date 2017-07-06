@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		524DC3BC1F0DCA650028FD23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524DC3BB1F0DCA650028FD23 /* AppDelegate.swift */; };
-		524DC3BE1F0DCA650028FD23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524DC3BD1F0DCA650028FD23 /* ViewController.swift */; };
+		524DC3BE1F0DCA650028FD23 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524DC3BD1F0DCA650028FD23 /* MainViewController.swift */; };
 		524DC3C11F0DCA650028FD23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524DC3BF1F0DCA650028FD23 /* Main.storyboard */; };
 		524DC3C31F0DCA650028FD23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524DC3C21F0DCA650028FD23 /* Assets.xcassets */; };
 		524DC3C61F0DCA650028FD23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524DC3C41F0DCA650028FD23 /* LaunchScreen.storyboard */; };
+		52A8D63B1F0DCFBF001ABF74 /* OjisanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8D63A1F0DCFBF001ABF74 /* OjisanViewController.swift */; };
+		52A8D63D1F0DCFED001ABF74 /* ChangeSeatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8D63C1F0DCFED001ABF74 /* ChangeSeatsViewController.swift */; };
+		52A8D63F1F0DD00E001ABF74 /* PairingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8D63E1F0DD00E001ABF74 /* PairingViewController.swift */; };
+		9BA3FA2E59B8E9DEEBAFC10C /* Pods_gokon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A25A18808CBA35567850E776 /* Pods_gokon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		524DC3B81F0DCA650028FD23 /* gokon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gokon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		524DC3BB1F0DCA650028FD23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		524DC3BD1F0DCA650028FD23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		524DC3BD1F0DCA650028FD23 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		524DC3C01F0DCA650028FD23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		524DC3C21F0DCA650028FD23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		524DC3C51F0DCA650028FD23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		524DC3C71F0DCA650028FD23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52A8D63A1F0DCFBF001ABF74 /* OjisanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OjisanViewController.swift; sourceTree = "<group>"; };
+		52A8D63C1F0DCFED001ABF74 /* ChangeSeatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeSeatsViewController.swift; sourceTree = "<group>"; };
+		52A8D63E1F0DD00E001ABF74 /* PairingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairingViewController.swift; sourceTree = "<group>"; };
+		672CE3FD28DD9C6B35D2F8D4 /* Pods-gokon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gokon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gokon/Pods-gokon.debug.xcconfig"; sourceTree = "<group>"; };
+		A25A18808CBA35567850E776 /* Pods_gokon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gokon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF91C48F3A109799F5AFA172 /* Pods-gokon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gokon.release.xcconfig"; path = "Pods/Target Support Files/Pods-gokon/Pods-gokon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA3FA2E59B8E9DEEBAFC10C /* Pods_gokon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EFC56EAB9BB9613E8F56CD9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				672CE3FD28DD9C6B35D2F8D4 /* Pods-gokon.debug.xcconfig */,
+				AF91C48F3A109799F5AFA172 /* Pods-gokon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3EBA2BA4FB5800E12AED7387 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A25A18808CBA35567850E776 /* Pods_gokon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		524DC3AF1F0DCA650028FD23 = {
 			isa = PBXGroup;
 			children = (
 				524DC3BA1F0DCA650028FD23 /* gokon */,
 				524DC3B91F0DCA650028FD23 /* Products */,
+				0EFC56EAB9BB9613E8F56CD9 /* Pods */,
+				3EBA2BA4FB5800E12AED7387 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,7 +85,10 @@
 			isa = PBXGroup;
 			children = (
 				524DC3BB1F0DCA650028FD23 /* AppDelegate.swift */,
-				524DC3BD1F0DCA650028FD23 /* ViewController.swift */,
+				524DC3BD1F0DCA650028FD23 /* MainViewController.swift */,
+				52A8D63A1F0DCFBF001ABF74 /* OjisanViewController.swift */,
+				52A8D63E1F0DD00E001ABF74 /* PairingViewController.swift */,
+				52A8D63C1F0DCFED001ABF74 /* ChangeSeatsViewController.swift */,
 				524DC3BF1F0DCA650028FD23 /* Main.storyboard */,
 				524DC3C21F0DCA650028FD23 /* Assets.xcassets */,
 				524DC3C41F0DCA650028FD23 /* LaunchScreen.storyboard */,
@@ -71,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 524DC3CA1F0DCA650028FD23 /* Build configuration list for PBXNativeTarget "gokon" */;
 			buildPhases = (
+				183949FC5A4A7550798174D4 /* [CP] Check Pods Manifest.lock */,
 				524DC3B41F0DCA650028FD23 /* Sources */,
 				524DC3B51F0DCA650028FD23 /* Frameworks */,
 				524DC3B61F0DCA650028FD23 /* Resources */,
+				BC71890F4C4DDBFA1C47294A /* [CP] Embed Pods Frameworks */,
+				4C41A708F27C33C766411BBF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +132,7 @@
 				TargetAttributes = {
 					524DC3B71F0DCA650028FD23 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Q87WRN244T;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,13 +168,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		183949FC5A4A7550798174D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4C41A708F27C33C766411BBF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gokon/Pods-gokon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC71890F4C4DDBFA1C47294A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gokon/Pods-gokon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		524DC3B41F0DCA650028FD23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				524DC3BE1F0DCA650028FD23 /* ViewController.swift in Sources */,
+				52A8D63F1F0DD00E001ABF74 /* PairingViewController.swift in Sources */,
+				524DC3BE1F0DCA650028FD23 /* MainViewController.swift in Sources */,
 				524DC3BC1F0DCA650028FD23 /* AppDelegate.swift in Sources */,
+				52A8D63B1F0DCFBF001ABF74 /* OjisanViewController.swift in Sources */,
+				52A8D63D1F0DCFED001ABF74 /* ChangeSeatsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +346,10 @@
 		};
 		524DC3CB1F0DCA650028FD23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 672CE3FD28DD9C6B35D2F8D4 /* Pods-gokon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q87WRN244T;
 				INFOPLIST_FILE = gokon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ut-develop.gokon";
@@ -270,8 +360,10 @@
 		};
 		524DC3CC1F0DCA650028FD23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF91C48F3A109799F5AFA172 /* Pods-gokon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q87WRN244T;
 				INFOPLIST_FILE = gokon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ut-develop.gokon";
@@ -299,6 +391,7 @@
 				524DC3CC1F0DCA650028FD23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

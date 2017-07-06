@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  gokon
-//
-//  Created by 河本泰知 on 2017/07/06.
-//  Copyright © 2017年 ut-develop. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
