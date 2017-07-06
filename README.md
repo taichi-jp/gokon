@@ -3,5 +3,6 @@ XLPagerTabStripを使用しています
 [XLPagerTabStripの使い方とカスタマイズ-Qiita](http://qiita.com/KikurageChan/items/35593dc3aac8d694db8e)
 
 ```
+$ git clone https://github.com/taichikoumoto/gokon.git
 $ pod install
 ```
